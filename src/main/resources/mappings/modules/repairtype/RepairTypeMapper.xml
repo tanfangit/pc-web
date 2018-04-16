@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jeeweb.modules.repairtype.mapper.RepairTypeMapper" >
+
+  <sql id="Base_Column_List" >
+    t.id,
+    t.repair_type_no,
+    t.repair_type_name,
+    t.remark,
+    t.status,
+    t.create_time,
+    t.create_user,
+    t.update_time,
+    t.update_user
+  </sql>
+  
+</mapper>
