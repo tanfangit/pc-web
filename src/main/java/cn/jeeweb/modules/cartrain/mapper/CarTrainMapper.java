@@ -1,6 +1,10 @@
 package cn.jeeweb.modules.cartrain.mapper;
 
+import java.util.List;
+import java.util.Map;
+
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+
 import cn.jeeweb.modules.cartrain.entity.CarTrain;
  
 /**   
@@ -12,5 +16,5 @@ import cn.jeeweb.modules.cartrain.entity.CarTrain;
  *
  */
 public interface CarTrainMapper extends BaseMapper<CarTrain> {
-    
+ 
 }
