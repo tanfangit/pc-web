@@ -108,6 +108,15 @@ public class RepairTypeController extends BaseBeanController<RepairType> {
         return doSave(repairType, request, response, result);
     }
 
+
+    @RequestMapping(value = "{id}/detail", method = RequestMethod.GET)
+    public String detail(@PathVariable("id") String id, Model model, HttpServletRequest request,
+                         HttpServletResponse response) {
+        RepairType repairType = get(id);
+        model.addAttribute("data", repairType);
+        return display("detail");
+    }
+
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     @ResponseBody
     public AjaxJson doSave(RepairType repairType, HttpServletRequest request, HttpServletResponse response,

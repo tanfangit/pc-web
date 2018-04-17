@@ -11,8 +11,9 @@
 	<grid:column label="sys.common.key" hidden="true"   name="id" width="100"/>
 	<grid:column label="sys.common.opt"  name="opt" formatter="button" width="100"/>
 	<grid:button groupname="opt" function="delete" />
+	<grid:button title="sys.common.query"  groupname="opt" function="openDetailDialog"  outclass="btn-warning" innerclass="fa-remove" url="${adminPath}/repairtype/repairtype/{id}/detail" />
     <grid:column label="维修类别编号"  name="repairTypeNo"  query="true"  queryMode="input"  condition="eq" />
-    <grid:column label="维修类别名称"  name="repairTypeName"  query="true"  queryMode="input"  condition="eq" />
+    <grid:column label="维修类别名称"  name="repairTypeName"  query="true"  queryMode="input"  condition="like" />
     <grid:column label="备注"  name="remark" />
     <grid:column label="创建时间"  name="createTime" />
 	<grid:toolbar function="create"/>
